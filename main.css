@@ -8,55 +8,53 @@ html, body{
     max-width: 500px;
     margin: 50px auto;
     background-color: white;
-}
-@media only screen and (max-width: 600px) {
-.content, .flash-cards, .table{
-    max-width: 1200px;
-    background-color: white;
-    padding: 20px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 600px) {
-    .content, .flash-cards, .table{
-        max-width: 1200px;
-        background-color: white;
-        padding: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-
-.sidebar-1 {
-    background-color: orange;
-    padding: 20px;
-    }
+.content{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-
-.main-content {
-    background-color: pink;
-    padding: 20px;
+.main-content{
+background-color: white;
+margin: 20px;
+padding: 20px;
+order: 2;
+flex: 2;
 }
 
-.sidebar-2 {
-    background-color: cyan;
-    padding: 20px;
+.sidebar-1{
+background-color: white;
+margin: 20px;
+padding: 20px;
+order: 1;
+flex: 1;
 }
+
+.sidebar-2{
+background-color: white;
+margin: 20px;
+padding: 20px;
+order: 3;
+flex: 1;
+}
+
+.flash-cards{
+display: flex;
+}
+
 
 .card{
-    padding: 45px;
+    padding: 25px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    
+    margin: 40px;
 }
 
 .card-1{
     background-color: lightpink;
-
-
 }
 
 .card-2{
@@ -67,42 +65,71 @@ html, body{
     background-color: aqua;
 }
 
-
 .table{
-    max-width: 850px;
-    background-color: antiquewhite;
-    margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  justify-content: center;
 }
 
 .main-page{
     background-color: rgb(113, 243, 182);
     padding: 15px;
+    flex: 1
 }
 
 .secondary-page{
-    
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
 }
 
 .section-1{
     background-color: rgb(135, 166, 250);
+   
 }
 
 .section-2{
     background-color: rgb(105, 129, 197);
-
+  
 }
 
 .section-3{
     background-color: rgb(74, 91, 139);
+ 
 }
 
-@media only screen and (max-width: 600px) {
-    .content, .flash-cards, .table {
+@media (max-width: 769px){
+.flash-cards{
+display: flex;
+flex-direction: column;
+}
 
 
+.main-content{
+    order: 1;
+    margin: 0px;
+  }
+.content{
+display: flex;
+flex-direction: column;
+margin: 50px;
+}
+.sidebar-1{order: 2;
+    margin: 0px;}
+    .sidebar-2{order: 3;
+    margin: 0px;}
+    
+    
+.table{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
     }
 
 
-
+}
