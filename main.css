@@ -9,54 +9,22 @@ html, body{
     margin: 50px auto;
     background-color: white;
 }
-@media only screen and (max-width: 600px) {
+
 .content, .flash-cards, .table{
     max-width: 1200px;
     background-color: white;
     padding: 20px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-@media only screen and (min-width: 600px) {
-    .content, .flash-cards, .table{
-        max-width: 1200px;
-        background-color: white;
-        padding: 20px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-    }
-
-.sidebar-1 {
-    background-color: orange;
-    padding: 20px;
-    }
-}
-
-
-.main-content {
-    background-color: pink;
-    padding: 20px;
-}
-
-.sidebar-2 {
-    background-color: cyan;
-    padding: 20px;
 }
 
 .card{
-    padding: 45px;
+    padding: 25px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    
 }
 
 .card-1{
     background-color: lightpink;
-
-
 }
 
 .card-2{
@@ -67,13 +35,10 @@ html, body{
     background-color: aqua;
 }
 
-
 .table{
     max-width: 850px;
     background-color: antiquewhite;
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
 }
 
 .main-page{
@@ -97,12 +62,4 @@ html, body{
 .section-3{
     background-color: rgb(74, 91, 139);
 }
-
-@media only screen and (max-width: 600px) {
-    .content, .flash-cards, .table {
-
-
-    }
-
-
 
